@@ -84,7 +84,7 @@ def all_holidays_with_bbq(holiday_hash)
         end
       end
     end
-    puts list
+    return list
   end
 
   #return an array of holiday names (as symbols) where supply lists

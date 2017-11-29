@@ -75,8 +75,10 @@ end
 def all_holidays_with_bbq(holiday_hash)
   list = []
   holiday_day = []
+  holiday_temp = ""
   holiday_hash.each do |season, season_data|
     season_data.each do |holiday, supplies|
+      holiday_temp = holiday
       supplies.each do |supply|
         if supply == "BBQ"
         list << holiday

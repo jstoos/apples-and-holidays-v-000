@@ -73,8 +73,8 @@ def all_supplies_in_holidays(holiday_hash)
 end
 
 def all_holidays_with_bbq(holiday_hash)
-  holiday_hash.each do |season, season_data|
-    season_data.collect do |particular_supply|
+  holiday_hash.collect do |season, season_data|
+    season_data.each do |particular_supply|
       particular_supply == "BBQ"
     end
     puts season_data

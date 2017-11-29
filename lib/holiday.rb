@@ -79,6 +79,7 @@ def all_holidays_with_bbq(holiday_hash)
       particular_supply.each do |x|
         if x == "BBQ"
         list << "#{season_data}"
+        end
       end
           puts list
     end

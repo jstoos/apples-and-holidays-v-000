@@ -81,7 +81,7 @@ def all_holidays_with_bbq(holiday_hash)
       holiday_temp = holiday
       supplies.each do |supply|
         if supply == "BBQ"
-        list << holiday
+        list << holiday_temp
         end
       end
     end

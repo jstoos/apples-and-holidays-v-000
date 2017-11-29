@@ -67,7 +67,7 @@ def all_supplies_in_holidays(holiday_hash)
           particular_supply.split.map(&:capitalize!).join(' ')
         end
         puts "  #{list}: "
-      end
+
     end
   end
 end

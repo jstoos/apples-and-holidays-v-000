@@ -63,7 +63,7 @@ def all_supplies_in_holidays(holiday_hash)
     season_data.each do |name_of_holiday, holiday_data|
       list = ""
       supplies = ""
-      list = name_of_holiday.to_s.split(' ').map(&:capitalize!).join(' ')
+      list = name_of_holiday.to_s.split.pop.map(&:capitalize!).join(' ')
         holiday_data.collect do |particular_supply|
           supplies = holiday_data.join(", ")
         end

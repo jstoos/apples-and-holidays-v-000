@@ -82,10 +82,10 @@ def all_holidays_with_bbq(holiday_hash)
         list << "#{holiday}"
         end
       end
-
     end
+    puts list
   end
-  puts list
+
   #return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
 

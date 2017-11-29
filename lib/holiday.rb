@@ -64,6 +64,7 @@ def all_supplies_in_holidays(holiday_hash)
       name_of_holiday.to_s.split.map(&:capitalize!).join(' ')
         holiday_data.each do |particular_supply|
           particular_supply.split.map(&:capitalize!).join(' ')
+          "#{name_of_holiday}: #{particular_supply}
       end
     end
   end
